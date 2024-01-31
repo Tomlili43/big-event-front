@@ -1,14 +1,14 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
 //导入组件
-import LoginVue from '@/views/Login.vue'
-import LayoutVue from '@/views/Layout.vue'
+import LoginVue from '@views/Login.vue'
+import LayoutVue from '@views/Layout.vue'
 
-import ArticleCategoryVue from '@/views/article/ArticleCategory.vue'
-import ArticleManageVue from '@/views/article/ArticleManage.vue'
-import UserAvatarVue from '@/views/user/UserAvatar.vue'
-import UserInfoVue from '@/views/user/UserInfo.vue'
-import UserResetPasswordVue from '@/views/user/UserResetPassword.vue'
+import ArticleCategoryVue from '@views/article/ArticleCategory.vue'
+import ArticleManageVue from '@views/article/ArticleManage.vue'
+import UserAvatarVue from '@views/user/UserAvatar.vue'
+import UserInfoVue from '@views/user/UserInfo.vue'
+import UserResetPasswordVue from '@views/user/UserResetPassword.vue'
 
 //定义路由关系
 const routes = [

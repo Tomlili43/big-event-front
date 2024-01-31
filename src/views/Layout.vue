@@ -9,11 +9,11 @@ import {
     SwitchButton,
     CaretBottom
 } from '@element-plus/icons-vue'
-import avatar from '@/assets/default.png'
+import avatar from '@assets/default.png'
 
-import {userInfoService} from '@/api/user.js'
-import useUserInfoStore from '@/stores/userInfo.js'
-import {useTokenStore} from '@/stores/token.js'
+import {userInfoService} from '@api/user.js'
+import useUserInfoStore from '@stores/userInfo.js'
+import {useTokenStore} from '@stores/token.js'
 const tokenStore = useTokenStore();
 const userInfoStore = useUserInfoStore();
 //调用函数,获取用户详细信息
@@ -164,7 +164,7 @@ const handleCommand = (command)=>{
 
         &__logo {
             height: 120px;
-            background: url('@/assets/logo.png') no-repeat center / 120px auto;
+            background: url('@assets/logo.png') no-repeat center / 120px auto;
         }
 
         .el-menu {

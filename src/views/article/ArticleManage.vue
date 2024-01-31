@@ -89,7 +89,7 @@ const onCurrentChange = (num) => {
 
 
 //回显文章分类
-import { articleCategoryListService, articleListService,articleAddService } from '@/api/article.js'
+import { articleCategoryListService, articleListService,articleAddService } from '@api/article.js'
 const articleCategoryList = async () => {
     let result = await articleCategoryListService();
 
@@ -141,7 +141,7 @@ const articleModel = ref({
 
 
 //导入token
-import { useTokenStore } from '@/stores/token.js';
+import { useTokenStore } from '@stores/token.js';
 const tokenStore = useTokenStore();
 
 //上传成功的回调函数

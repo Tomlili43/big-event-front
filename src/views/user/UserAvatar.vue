@@ -1,12 +1,12 @@
 <script setup>
 import { Plus, Upload } from '@element-plus/icons-vue'
 import {ref} from 'vue'
-import avatar from '@/assets/default.png'
+// import avatar from '@/assets/default.png'
 const uploadRef = ref()
-import {useTokenStore} from '@/stores/token.js'
+import {useTokenStore} from '@stores/token.js'
 const tokenStore = useTokenStore();
 
-import useUserInfoStore from '@/stores/userInfo.js'
+import useUserInfoStore from '@stores/userInfo.js'
 const userInfoStore = useUserInfoStore();
 
 //用户头像地址
@@ -19,7 +19,7 @@ const uploadSuccess = (result)=>{
 
 
 
-import {userAvatarUpdateService} from '@/api/user.js'
+import {userAvatarUpdateService} from '@api/user.js'
 import {ElMessage} from 'element-plus'
 //头像修改
 const updateAvatar = async ()=>{
@@ -53,7 +53,7 @@ const updateAvatar = async ()=>{
                     :on-success="uploadSuccess"
                     >
                     <img v-if="imgUrl" :src="imgUrl" class="avatar" />
-                    <img v-else src="avatar" width="278" />
+                    <!-- <img v-else src="avatar" width="278" /> -->
                 </el-upload>
                 <br />
                 <el-button type="primary" :icon="Plus" size="large"  @click="uploadRef.$el.querySelector('input').click()">
