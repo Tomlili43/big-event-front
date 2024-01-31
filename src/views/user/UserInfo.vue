@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue'
-import useUserInfoStore from '@/stores/userInfo.js'
+import useUserInfoStore from '@stores/userInfo.js'
 const userInfoStore = useUserInfoStore();
 
 const userInfo = ref({...userInfoStore.info})
@@ -20,7 +20,7 @@ const rules = {
 }
 
 //修改个人信息
-import {userInfoUpdateService} from '@/api/user.js'
+import {userInfoUpdateService} from '@api/user.js'
 import {ElMessage} from 'element-plus'
 const updateUserInfo = async ()=>{
     //调用接口

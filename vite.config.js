@@ -9,9 +9,12 @@ export default defineConfig({
   plugins: [vue()],
   resolve: {
     alias: {
-      // "@": path.resolve(__dirname, "./src/"),
+      "@": path.resolve(__dirname, "./src/"),
       "@assets": path.resolve(__dirname, "./src/assets/"),
       "@router": path.resolve(__dirname, "./src/router/"),
+      "@views": path.resolve(__dirname, "./src/views/"),
+      "@api": path.resolve(__dirname, "./src/api/"),
+      "@stores": path.resolve(__dirname, "./src/stores/"),
       // "@": fileURLToPath(new URL("./src", import.meta.url)),
     },
   },

@@ -38,7 +38,7 @@ const rules = {
 }
 
 //调用后台接口,完成注册
-import { userRegisterService, userLoginService} from '@/api/user.js'
+import { userRegisterService, userLoginService} from '@api/user.js'
 const register = async () => {
     //registerData是一个响应式对象,如果要获取值,需要.value
     let result = await userRegisterService(registerData.value);
@@ -56,7 +56,7 @@ const register = async () => {
 //绑定数据,复用注册表单的数据模型
 //表单数据校验
 //登录函数
-import {useTokenStore} from '@/stores/token.js'
+import {useTokenStore} from '@stores/token.js'
 import {useRouter} from 'vue-router'
 const router = useRouter()
 const tokenStore = useTokenStore();
@@ -156,8 +156,8 @@ const clearRegisterData = ()=>{
     background-color: #fff;
 
     .bg {
-        background: url('@/assets/logo2.png') no-repeat 60% center / 240px auto,
-            url('@/assets/login_bg.jpg') no-repeat center / cover;
+        background: url('@assets/logo2.png') no-repeat 60% center / 240px auto,
+            url('@assets/login_bg.jpg') no-repeat center / cover;
         border-radius: 0 20px 20px 0;
     }
 

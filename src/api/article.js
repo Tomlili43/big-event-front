@@ -1,5 +1,5 @@
 import request from '@/utils/request.js'
-import { useTokenStore } from '@/stores/token.js'
+import { useTokenStore } from '@stores/token.js'
 //文章分类列表查询
 export const articleCategoryListService = ()=>{
     //const tokenStore = useTokenStore();
